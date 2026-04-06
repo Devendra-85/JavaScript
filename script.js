@@ -67,3 +67,48 @@
 
 
 //================================================================================
+
+
+//Data Types+Type System
+//agr hm data ki baat kre to data kayi trh k hote h jinko hm do types me bant skte h:-
+//Primitive Data Types: aisi asari values jinko copy krne pr ek real copy mil jaye
+// ex.=>string, number, boolean, null, undefined, symbol, bigint
+
+// let a = 13;
+// let b = a; //copy of a
+// console.log(a); //13
+// console.log(b); //13
+
+// //now if we change the of b it won't change the value of a because b is a copy of a and it has its own memory location..so b is not a reference to a
+
+// b = 14;
+// console.log(a); //13
+// console.log(b); //14
+
+
+//Non-Primitive Data Types: aisi sari values jiko copy krne pr ek real copy n milkr ek reference  mile parent ka
+// ex=> object{}, array[], function()
+
+// let obj1 = { name: "John", age: 30 };
+// let obj2 = obj1;
+// console.log(obj1); //{ name: "John", age: 30 }
+// console.log(obj2); //{ name: "John", age: 30 }
+
+// //now if we change the value of obj2 it will change the value of obj1 because obj2 is a reference to obj1 and it has the same memory location as obj1..so obj2 is not a copy of obj1
+
+// obj2.name = "Doe";
+// console.log(obj1); //{ name: "Doe", age: 30 }
+// console.log(obj2); //{ name: "Doe", age: 30 }
+
+//same thing done with the array
+
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+// console.log(arr1); //[1, 2, 3]
+// console.log(arr2); //[1, 2, 3]
+
+// arr2.push(4);
+// console.log(arr1); //[1, 2, 3, 4]
+// console.log(arr2); //[1, 2, 3, 4]
+
+
