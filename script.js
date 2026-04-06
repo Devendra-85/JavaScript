@@ -159,3 +159,32 @@
 // Number.MAX_SAFE_INTEGER; //9007199254740991
 // let a = BigInt(Number.MAX_SAFE_INTEGER) + BigInt(1);
 // console.log(a); //9007199254740992n
+
+//------------------------------------------------------------------------------
+
+//reference data types:- it is a data type that represents a reference to an object in memory. It is a non-primitive data type in JavaScript.
+// (isme jb hm kisi variable ki value ko kisi dusre variable me assign krte h to us case me dono variable same memory location ko point krte h. isliye agar hm kisi variable ki value ko change krte h to uska effect dusre variable par bhi hota h))
+
+// //in object
+// let a= { name: "John", age: 30 };
+// let b = a;
+// console.log(a); //{ name: "John", age: 30 }
+// console.log(b); //{ name: "John", age: 30 }
+
+// b.name = "Doe";
+// console.log(a); //{ name: "Doe", age: 30 }
+// console.log(b); //{ name: "Doe", age: 30 }
+
+// //in array
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+// console.log(arr1); //[1, 2, 3]
+// console.log(arr2); //[1, 2, 3]
+// arr2.push(4);
+// console.log(arr1); //[1, 2, 3, 4]
+// console.log(arr2); //[1, 2, 3, 4]
+
+
+
+
+
