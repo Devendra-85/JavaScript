@@ -22,9 +22,23 @@ const c = 12;
 console.log(c); //12
 
 //we can declare the variable with var keyword in global scope and function scope but we cannot declare the variable with let and const keyword in global scope but we can declare the variable with let and const keyword in block scope
-==================================================================================
+//==================================================================================
 //Temporal dead zone: it is the time period between the hoisting of the variable and its declaration. During this time period, the variable is in a state of "temporal dead zone" and cannot be accessed. If we try to access the variable during this time period, we will get a ReferenceError.
 
 //Example of temporal dead zone
 console.log(d); //ReferenceError: Cannot access 'd' before initialization
 let d = 12;
+
+//var do not have any temporal dead zone because var variables are hoisted and initialized with undefined, so we can access them before their declaration without getting a ReferenceError, but we will get undefined as the value.
+
+console.log(e);
+var e = 14;
+//it will give an undefined value but it will ot show any error because var variables are hoisted and initialized with undefined.
+//==================================================================================
+
+//hoisting
+//ek variable ko jb js me bnate h to wah do hisson me tut jata h uska declaration wala part upr chla jata h aur initialization wala part wahi rehta h jaha humne usko initialize kiya hota h, is process ko hoisting kehte h. var variables are hoisted and initialized with undefined, let and const variables are hoisted but not initialized, so they are in temporal dead zone until they are declared and initialized.
+//var a=12; //declaration and initialization
+//it will be hoisted as
+var a=undefined; //declaration it is hoisted and initialized with undefined
+a=12; //initialization
