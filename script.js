@@ -197,15 +197,39 @@
 // a = true;
 // console.log(a); //true
 
-//typeof quirks:-
-// typeof null is object,
-// typeof array is object,
-// typeof function is function,
-// typeof NaN is number,
-// NaN is not a number but it is a special value of number data type,
-// NaN===NaN is false because NaN is not equal to anything including itself
+// //typeof quirks:-
+// typeof null // object,
+// typeof array // object,
+// typeof function //function,
+// typeof NaN //number,
+// typeof NaN //number is not a number but it is a special value of number data type,
+// typeof NaN===NaN // false because NaN is not equal to anything including itself
 
-//===============================================================================
+// //=============================================================================
+
+// //Type Coercion:- yeh ek aisa concept h jisme aapka ek type ka value kisi dusre type me convert ho jata h automatically.
+
+// let a = "12";
+// let b = 3;
+// console.log(a + b); //123 because of string concatenation
+// console.log(a - b); //9 because of type coercion
+// console.log(a * b); //36 because of type coercion
+// console.log(a / b); //4 because of type coercion
+
+// //Truthy and falsy values:-
+// //Truthy values: aisi values jinko boolean me convert krne par true milta h
+// //Falsy values: aisi values jinko boolean me convert krne par false milta h
+// //Falsy values in JavaScript: false, 0, -0, 0n, "", null, undefined, NaN, document.all
+
+// // note:
+// // 1. why NaN is treated as a number:
+// //   NaN:- javascript me ek failed number operation ki trh treat krta h isliye    uska type number hota h. jaise ki agar aap kisi string ko number me convert krne ki koshish karte h to aapko NaN milega aur uska type number hoga. isliye NaN is treated as a number in JavaScript.
+        
+// //   2. Undefined and null: -
+// //        undefined value tb aati h jb hm koi variable bnate h lekin use koi value assign nhi krte h.
+            
+// //         null vlaue tb aati h jb hm janbujhkr kisi variable me koi null value assign krte h.
+
 
 
 
