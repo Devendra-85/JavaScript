@@ -52,7 +52,7 @@
 //     var x = 2;//global scope
 // }
 // console.log(x); // 2
-//=========================================
+// =========================================
 // let b = 2;//block scope
 // {
 //     let b = 3; //block scope
@@ -60,18 +60,18 @@
 // }
 // console.log("Outside:",b); //2
 
-//========================================
+// ========================================
 // console.log(b);
 // let b = 13;
 // //ReferenceError: Cannot access 'b' before initialization
 
 
-//================================================================================
+// ================================================================================
 
 
-//Data Types+Type System
-//agr hm data ki baat kre to data kayi trh k hote h jinko hm do types me bant skte h:-
-//Primitive Data Types: aisi asari values jinko copy krne pr ek real copy mil jaye
+// Data Types+Type System
+// agr hm data ki baat kre to data kayi trh k hote h jinko hm do types me bant skte h:-
+// Primitive Data Types: aisi asari values jinko copy krne pr ek real copy mil jaye
 // ex.=>string, number, boolean, null, undefined, symbol, bigint
 
 // let a = 13;
@@ -86,7 +86,7 @@
 // console.log(b); //14
 
 
-//Non-Primitive Data Types: aisi sari values jiko copy krne pr ek real copy n milkr ek reference  mile parent ka
+// Non-Primitive Data Types: aisi sari values jiko copy krne pr ek real copy n milkr ek reference  mile parent ka
 // ex=> object{}, array[], function()
 
 // let obj1 = { name: "John", age: 30 };
@@ -100,7 +100,7 @@
 // console.log(obj1); //{ name: "Doe", age: 30 }
 // console.log(obj2); //{ name: "Doe", age: 30 }
 
-//same thing done with the array
+// same thing done with the array
 
 // let arr1 = [1, 2, 3];
 // let arr2 = arr1;
@@ -111,4 +111,51 @@
 // console.log(arr1); //[1, 2, 3, 4]
 // console.log(arr2); //[1, 2, 3, 4]
 
+// --------------------------------------------------------------------------------
 
+// String:- it is a sequence of characters enclosed in single quotes, double quotes or backticks. It is a primitive data type in JavaScript.
+// let str1 = "Hello";
+// let str2 = 'World';
+// let str3 = `Hello World`;
+
+
+//number:- it is a data type that represents numeric values. It is a primitive data type in JavaScript.
+// let num1 = 12;
+// let num2 = 3.14;
+
+
+//boolean:- it is a data type that represents two values: true and false. It is a primitive data type in JavaScript.
+// let bool1 = true;
+// let bool2 = false;
+
+
+//null:- it is a data type that represents the absence of any value. It is a primitive data type in JavaScript.(hmne janbujhkr koi value nhi di.)
+// let nullVar = null;
+
+
+//undefined:- it is a data type that represents the absence of any value. It is a primitive data type in JavaScript.(hmne variable bnaya lekin usko koi value nhi di. to us case me us variable ki value undefined hoti h.)
+// let undefinedVar;
+
+//symbol:- it is a data type that represents a unique identifier. It is a primitive data type in JavaScript.
+//(unique immutable value(jo change ni hota) create krta h )
+// let sym1 = Symbol("sym1");
+// let sym2 = Symbol("sym2");
+// console.log(sym1 === sym2); //false because each symbol is unique
+
+// let obj={
+//     name:"John",
+//     age:30,
+//     city:"New York"
+// }
+// let u1 = Symbol("name")
+// obj[u1]="Doe";
+// console.log(obj); //{ name: "John", age: 30, city: "New York", [Symbol(name)]: "Doe" }
+
+
+//bigint:- it is a data type that represents numeric values that are too large to be represented by the number data type. It is a primitive data type in JavaScript.
+//(agr hm ek bigint value bna rhe h to us value k last me n lagana hota h ya phir us value ko BigInt() function ke andar pass krna hota h.)
+// let bigInt1 = BigInt(123456789012345678901234567890);
+// let bigInt2 = 123456789012345678901234567890n; //using n at the end of the number to create a bigint
+// Number.MAX_SAFE_INTEGER; //9007199254740991
+// let a = BigInt(Number.MAX_SAFE_INTEGER) + BigInt(1);
+// console.log(a); //9007199254740992n
