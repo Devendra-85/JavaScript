@@ -230,6 +230,34 @@
             
 // //         null vlaue tb aati h jb hm janbujhkr kisi variable me koi null value assign krte h.
 
+// // ===============================================================================
+
+// // operators:- operators are special symbols that perform operations on operands. There are different types of operators in JavaScript:
+
+// // 1. Arithmetic operators: +(addition and concatenation), -, *, **(exponentiation 2**3=8), /, %, ++, --,%
+
+// // 2. Assignment operators: =, +=, -=, *=, /=, %=, **=
+
+// // 3. Comparison operators: ==, ===, !=, !==, >, <, >=, <=
+
+// // 4. Logical operators: &&, ||, !
+
+// // 5. Bitwise operators: &, |, ^, ~, <<, >>, >>>
+
+// // 6. Ternary operator: condition ? expression1 : expression2
+
+// // 7. Unary operator:- +, -, ++, --, typeof, instanceof(yah hme btata h ki koi value kis type ka h jaise koi variable array ka h ki nhi), void, delete(ye ek value pr lgte h).
+
+// // note: instanceof aur typeof me farq h ki typeof hme value ka type btata h jabki instanceof hme value ka constructor btata h ki wo kis type ka object h.
+// let a = [];
+// a instanceof Array; //true
+// a instanceof Object; //true because array is also an object in JavaScript
+
+//let a = 12;
+// typeof a; //number
+
+
+
 
 
 
