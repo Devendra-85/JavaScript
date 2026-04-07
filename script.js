@@ -347,5 +347,59 @@
 // }
 //===================================================================================================================
 
+////loops:- loops are used to execute a block of code repeatedly until a specified condition is true. There are different types of loops in JavaScript:
+
+////for loop:- it is used to execute a block of code a specified number of times. It consists of three parts: initialization, condition and increment/decrement.
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);
+// }
+
+////while loop:- it is used to execute a block of code repeatedly as long as a specified condition is true. It consists of two parts: condition and increment/decrement.
+// let i = 0;
+// while (i < 5) {
+//     console.log(i);
+//     i++;
+// }
+
+////do while loop:- it is used to execute a block of code at least once and then repeatedly as long as a specified condition is true. It consists of two parts: block of code and condition.
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
+
+////for in loop:- it is used to iterate over the properties of an object. It consists of two parts: variable and object.
+// let obj = { name: "John", age: 30, city: "New York" };
+// for (let key in obj) {
+//     console.log(key + ": " + obj[key]);
+// }
+
+////for of loop:- it is used to iterate over the values of an iterable object. It consists of two parts: variable and iterable object.
+// let arr = [1, 2, 3, 4, 5];
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+////foreach loop:- it is used to execute a block of code for each element in an array. It consists of two parts: callback function and array.
+// let arr = [1, 2, 3, 4, 5];
+// arr.forEach(function(value) {
+//     console.log(value);
+// });
+
+////break statement:- it is used to exit from a loop or switch case statement before it reaches the end of the loop or switch case statement. It is used to avoid unnecessary code execution and to improve the readability of the code.
+// for (let i = 0; i < 5; i++) {
+//     if (i === 3) break;
+//     console.log(i);
+// }
+
+////continue statement:- it is used to skip the current iteration of a loop and move to the next iteration. It is used to avoid unnecessary code execution and to improve the readability of the code.
+// for (let i = 0; i < 5; i++) {
+//     if (i === 3) continue;
+//     console.log(i);
+// }
+
+//=====================================================================================
+
+
 
 
