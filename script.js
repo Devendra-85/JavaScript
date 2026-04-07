@@ -256,12 +256,96 @@
 //let a = 12;
 // typeof a; //number
 
+// //-------------------------------------------------------------------------
+//exercise:-
+// let x = 10;
+// let y = 20;
+// if (x > 5 && y < 25) {
+//     console.log("A");
+// }else {
+//     console.log("B");
+// }
+// //output A
 
+// let temp = 35;
+// if (!(temp < 30)) {
+//     console.log("It's hot outside.");
+// } else {
+//     console.log("It's not hot outside.");
+// }
 
+// //output: It's hot outside.
 
+// let n = 5;
+// let result = n++ + ++n;
+// console.log(result); //12
 
+// //===================================================================================================================
+//Control flow statements:- control flow statements are used to control the flow of execution of the program. There are different types of control flow statements in JavaScript:
 
+////if, if else, else if, early return and switch case statements
+//// if statement:- it is used to execute a block of code if a specified condition is true. if statement can be used alone or with else and else if statements.
 
+// let a = 12;
+// if (a > 10) {
+//     console.log("a is greater than 10");
+// }
+
+////if else statement:- it is used to execute a block of code if a specified condition is true and another block of code if the condition is false. if else statement can be used alone or with else if statements.
+////ex.
+//  if (a > 10) {
+//     console.log("a is greater than 10");
+// } else {
+//     console.log("a is not greater than 10");
+// }
+
+////else if statement:- it is used to specify a new condition to test, if the first condition is false. else if statement can be used with if and else statements.
+////ex.
+// if (a > 10) {
+//     console.log("a is greater than 10");
+// } else if (a === 10) {
+//     console.log("a is equal to 10");
+// } else {
+//     console.log("a is less than 10");
+// }
+
+////early return statement:- it is used to exit from a function before it reaches the end of the function. It is used to avoid unnecessary code execution and to improve the readability of the code.
+////ex.
+// function checkNumber(num) {
+//     if (num > 0)  return "Positive";
+//     else if (num < 0)  return "Negative";
+//      else return "Zero";
+// }
+
+////switch case statement:- it is used to perform different actions based on different conditions. It is an alternative to if else statement when we have multiple conditions to check.
+////ex.
+// let day = 3;
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     case 7:
+//         console.log("Sunday");
+//         break;
+//     default:
+//         console.log("Invalid day");
+// }
+//===================================================================================================================
 
 
 
