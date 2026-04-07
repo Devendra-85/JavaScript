@@ -1,9 +1,6 @@
-var select = document.getElementById("heading1");
-console.dir(select);
-var selectByClass = document.getElementsByClassName("head");
-console.dir(selectByClass);
-var selectByQuery = document.querySelector("h1");//first h1 tag selects
-console.dir(selectByQuery);
-var selectAllByQuery = document.querySelectorAll("h1");//all h1 tags selects
-console.dir(selectAllByQuery);
-
+function changeImage(id) {
+    var img = document.querySelector('#' + id);
+    //var img = document.querySelector('#img1');
+    var imageShowDiv = document.querySelector(".imageShow")
+    imageShowDiv.innerHTML = "<img src='" + img.src + "' alt='Image' style='max-width: 100%; max-height: 100%;'>";
+}
